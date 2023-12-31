@@ -26,10 +26,11 @@ Route::get('logout', [UserController::class, 'logout'])->name('logout');
 
 Route::get('/Admin', [AdminController::class, 'index'])->name('admin.index');
 Route::get('/Admin/create', [AdminController::class, 'create'])->name('admin.create');
-Route::get('/Admin/edit', [AdminController::class, 'edit'])->name('admin.edit');
+// Route::get('/Admin/edit', [AdminController::class, 'edit'])->name('admin.edit');
+Route::get('/Admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
 Route::post('/Admin/store', [AdminController::class, 'store'])->name('admin.store');
-Route::post('/Admin/update', [AdminController::class, 'update'])->name('admin.update');
-Route::post('/Admin/delete', [AdminController::class, 'delete'])->name('admin.delete');
+Route::post('/Admin/update', [AdminController::class, 'update'])->name('Admin.update');
+Route::delete('/Admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home']);
