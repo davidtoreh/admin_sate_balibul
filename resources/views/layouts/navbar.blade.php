@@ -8,7 +8,9 @@
           <a class="nav-link" href="{{ route('admin.index') }}">List</a>
           <li class="nav-item dropdown">
             <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{auth()->tb_user()->name}}
+                @if(auth()->check())
+                {{ auth()->user()->name }}  
+                @endif
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
