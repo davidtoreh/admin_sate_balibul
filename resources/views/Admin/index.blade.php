@@ -20,7 +20,7 @@
                 <tr>
                     <th>No</th>
                     <th>Nama Menu</th>
-                    <th>Deskripsi Menu</th>
+                    <th style="max-width: 2px">Deskripsi Menu</th>
                     <th>Tipe Menu</th>
                 </tr>
             </thead>

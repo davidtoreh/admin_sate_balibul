@@ -11,7 +11,7 @@ class AdminController extends Controller
     {
         $admin = Admin::all(); //ambil data
         // dd($admin);
-        return view('admin.index', compact('admin')); 
+        return view('admin.index', compact('admin'));
     }
 
     /**
@@ -19,7 +19,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.create'); 
+        return view('admin.create');
     }
 
     /**
@@ -39,22 +39,21 @@ class AdminController extends Controller
 
     public function edit($id)
     {
-        $admin = Admin::where('id', $admin->id)->get();
-        return view('Admin.index', [
-            'title' => 'Edit Menu',
-        ]);
+        // $admin = Admin::where('id', $admin->id)->get();
+        // return view('Admin.index', [
+        //     'title' => 'Edit Menu',
+        // ]);
+
+        $admin = Admin::findOrFail($id);
+        return view('Admin.edit', compact('admin'));
     }
 
-    public function update(Request $request, Admin $admin)
+    public function update(Request $request, $id)
     {
-        $data = $request->all();
-        Admin::where('id', $admin->id)->update([
-            'nama_menu'=>$data['nama'] ,
-            'deskripsi_menu'=>$data['deskripsi'],
-            'tipe_menu'=>$data['tipe']
-        ]);
+        $admin = Admin::findOrFail($id);
+        $admin->update($request->all());
 
-        return redirect('admin.index')->with('success', 'Berhasil mengubah menu dengan nama ' . $request['nama_menu']);
+        return redirect('Admin')->with('success', 'Berhasil mengubah menu dengan nama ' . $request['nama_menu']);
     }
 
     public function delete($id)
