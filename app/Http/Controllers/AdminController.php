@@ -10,6 +10,7 @@ class AdminController extends Controller
     public function index()
     {
         $admin = Admin::all(); //ambil data
+        // dd($admin);
         return view('admin.index', compact('admin')); 
     }
 
@@ -36,11 +37,10 @@ class AdminController extends Controller
         return redirect(route('admin.index'));
     }
 
-    public function edit(Request $request, Admin $admin)
+    public function edit($id)
     {
-        $admin = $request->all();
         $admin = Admin::where('id', $admin->id)->get();
-        return view('admin.index', [
+        return view('Admin.index', [
             'title' => 'Edit Menu',
         ]);
     }
