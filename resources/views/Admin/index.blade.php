@@ -33,7 +33,7 @@
                 <td>{{ $menu->tipe_menu }}</td>
                 <td>
                     <a class="btn btn-sm btn-warning" href="{{ route('admin.edit') }}">Ubah</a>
-                    <form method="POST" action="{{ route('admin.delete') }}" style="display: inline-block;">
+                    <form method="POST" action="{{ route('admin.delete', $menu->id) }}" style="display: inline-block;">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-sm btn-danger" onclick="return confirm('Hapus Data?')">Hapus</button>

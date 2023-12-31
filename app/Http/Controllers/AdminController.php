@@ -36,10 +36,11 @@ class AdminController extends Controller
         return redirect(route('admin.index'));
     }
 
-    public function edit(Admin $admin)
+    public function edit(Request $request, Admin $admin)
     {
+        $admin = $request->all();
         $admin = Admin::where('id', $admin->id)->get();
-        return view('Admin.index', [
+        return view('admin.index', [
             'title' => 'Edit Menu',
         ]);
     }
@@ -56,10 +57,10 @@ class AdminController extends Controller
         return redirect('admin.index')->with('success', 'Berhasil mengubah menu dengan nama ' . $request['nama_menu']);
     }
 
-    public function delete(Admin $admin)
+    public function delete($id)
     {
-        Admin::destroy($admin->id);
-
-        return redirect('admin.index')->with('success', 'Berhasil menghapus menu dengan nama ' . $menu->nama_menu);
+        $admin = Admin::findOrFail($id);
+        $admin -> delete();
+        return redirect('Admin')->with('success', 'Berhasil menghapus menu dengan nama ' . $admin->nama_menu);
     }
 }

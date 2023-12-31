@@ -29,7 +29,7 @@ Route::get('/Admin/create', [AdminController::class, 'create'])->name('admin.cre
 Route::get('/Admin/edit', [AdminController::class, 'edit'])->name('admin.edit');
 Route::post('/Admin/store', [AdminController::class, 'store'])->name('admin.store');
 Route::post('/Admin/update', [AdminController::class, 'update'])->name('admin.update');
-Route::post('/Admin/delete', [AdminController::class, 'delete'])->name('admin.delete');
+Route::delete('/Admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home']);
