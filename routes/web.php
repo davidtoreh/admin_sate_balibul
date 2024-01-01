@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,6 +31,12 @@ Route::get('/Admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.ed
 Route::post('/Admin/store', [AdminController::class, 'store'])->name('admin.store');
 Route::post('/Admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
 Route::delete('/Admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
+
+Route::get('/landingPage', function () {
+    return view('landingPage');
+});
+
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home']);
