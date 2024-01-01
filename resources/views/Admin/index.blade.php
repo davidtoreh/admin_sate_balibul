@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
-@if(session('success'))
-<p class="alert alert-success">{{ session('success') }}</p>
+@if (session('success'))
+    <p class="alert alert-success">{{ session('success') }}</p>
 @endif
 
 @section('content')

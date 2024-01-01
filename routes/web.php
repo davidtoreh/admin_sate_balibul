@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,8 @@ Route::delete('/Admin/delete/{id}', [AdminController::class, 'delete'])->name('a
 Route::get('/landingPage', function () {
     return view('landingPage');
 });
+
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home']);
