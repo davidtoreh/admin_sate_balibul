@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Rating extends Model
+class Reservasi extends Model
 {
     use HasFactory;
 
-    protected $table = 'rating_customers';
+    protected $table = 'reservasi';
 
     protected $fillable = [
-        'id', 'nama', 'rating', 'komentar', 'created_at','updated_at'
+        'id', 'nama_pemesan', 'tanggal_reservasi', 'jumlah_orang', 'created_at','updated_at'
     ];
+
 }

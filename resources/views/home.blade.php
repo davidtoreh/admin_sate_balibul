@@ -6,10 +6,10 @@
             <div style="width: 30%; background-color: #dc354685">
                 <ul class="list-group">
                     <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="/Admin">List Menu</a></li>
-                    <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="">Feedback Customer</a></li>
-                    <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="">Daftar Karyawan</a></li>
+                    <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="/Rating">Daftar Rating Customer</a></li>
+                    <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="/Karyawan">Daftar Karyawan</a></li>
                     <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="/Cabang">Daftar Cabang</a></li>
-                    <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="">List Menu</a></li>
+                    <li class="list-group-item px-4 bg-transparent" style="border: none"><a style="text-decoration: none" class="text-black fw-bold" href="/Reservasi">Daftar Reservasi</a></li>
                 </ul>
             </div>
             <div class="container">

@@ -6,30 +6,30 @@
 
 @section('content')
 
-<a href="/Admin/create" type="button" class="btn btn-primary mt-4 mb-2 ms-4">Tambah</a>
+<a href="/Rating/create" type="button" class="btn btn-primary mt-4 mb-2 ms-4">Tambah</a>
 <div class="card card-default px-4">
+    @if (count($rating) > 0)
     <div class="card-body mt-4 p-0 table-responsive">
-        @if (count($admin) > 0)
         <table class="table table-bordered table-striped table-hover mb-0">
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama Menu</th>
-                    <th>Deskripsi Menu</th>
-                    <th>Tipe Menu</th>
+                    <th>Nama Customer</th>
+                    <th>Rating Customer</th>
+                    <th>Komentar Customer</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <?php $no = 1 ?>
-            @foreach($admin as $menu)
+            @foreach($rating as $ratings)
             <tr>
                 <td>{{ $no++ }}</td>
-                <td style="width : 250px">{{ $menu->nama_menu }}</td>
-                <td >{{ $menu->deskripsi_menu }}</td>
-                <td >{{ $menu->tipe_menu }}</td>
+                <td>{{ $ratings->nama }}</td>
+                <td>{{ $ratings->rating }}</td>
+                <td>{{ $ratings->komentar }}</td>
                 <td class="d-flex flex-col gap-3 justify-items-center">
-                    <a class="btn btn-warning" href="{{ route('admin.edit', $menu->id) }}">Ubah</a>
-                    <form method="post" action="{{ route('admin.delete', $menu->id) }}" style="display: inline-block;">
+                    <a class="btn  btn-warning" href="{{ route('rating.edit', $ratings->id) }}">Ubah</a>
+                    <form method="post" action="{{ route('rating.delete', $ratings->id) }}" style="display: inline-block;">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger" onclick="return confirm('Hapus Data?')">Hapus</button>
@@ -39,8 +39,8 @@
             @endforeach
         </table>
     </div>
+    @else
+        <p>Tidak ada Data Rating Karyawan</p>
+    @endif
 </div>
-@else
-<p>Tidak ada makanan dan minum di menu ini.</p>
-@endif
 @endsection

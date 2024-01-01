@@ -3,16 +3,16 @@
 @section('content')
   <section id='form'>
     <div class="container">
-      <h1 class="tambahh1">Edit Menu</h1>
-      <p class="tambahp">Mengubah Menu makanan yang ada dalam list menu</p>
-      <form action="/Cabang/update/{{$admin->id}}" method="POST" enctype="multipart/form-data">
+      <h1 class="tambahh1">Edit Cabang</h1>
+      <p class="tambahp">Mengubah Cabang UMKM Sate Balibul</p>
+      <form action="/Cabang/update/{{$cabang->id}}" method="POST" enctype="multipart/form-data">
         @csrf
         <label for="merk">Cabang</label>
-        <input id="brand" name="nama_menu" type="text" value="{{ $admin->cabang }}">
+        <input id="brand" name="cabang" type="text" value="{{ $cabang->cabang }}">
         <label for="merk">Alamat Cabang</label>
-        <input id="warna" name="deskripsi_menu" type="text" value="{{ $admin->alamat }}">
+        <input id="warna" name="alamat" type="text" value="{{ $cabang->alamat }}">
         <label for="merk">Kontak</label>
-        <input id="tipe" name="tipe_menu" type="text" value="{{ $admin->kontak }}">
+        <input id="tipe" name="kontak" type="text" value="{{ $cabang->kontak }}">
         <button class="btn btn-primary" type="submit" style="margin-top: 40px;">Update</button>
       </form>
     </div>

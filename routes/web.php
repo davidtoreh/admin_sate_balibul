@@ -5,6 +5,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CabangController;
+use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\RatingController;
+use App\Http\Controllers\ReservasiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +42,27 @@ Route::get('/Cabang/edit/{id}', [CabangController::class, 'edit'])->name('cabang
 Route::post('/Cabang/store', [CabangController::class, 'store'])->name('cabang.store');
 Route::post('/Cabang/update/{id}', [CabangController::class, 'update'])->name('cabang.update');
 Route::delete('/Cabang/delete/{id}', [CabangController::class, 'delete'])->name('cabang.delete');
+
+Route::get('/Karyawan', [KaryawanController::class, 'index'])->name('karyawan.index');
+Route::get('/Karyawan/create', [KaryawanController::class, 'create'])->name('karyawan.create');
+Route::get('/Karyawan/edit/{id}', [KaryawanController::class, 'edit'])->name('karyawan.edit');
+Route::post('/Karyawan/store', [KaryawanController::class, 'store'])->name('karyawan.store');
+Route::post('/Karyawan/update/{id}', [KaryawanController::class, 'update'])->name('karyawan.update');
+Route::delete('/Karyawan/delete/{id}', [KaryawanController::class, 'delete'])->name('karyawan.delete');
+
+Route::get('/Rating', [RatingController::class, 'index'])->name('rating.index');
+Route::get('/Rating/create', [RatingController::class, 'create'])->name('rating.create');
+Route::get('/Rating/edit/{id}', [RatingController::class, 'edit'])->name('rating.edit');
+Route::post('/Rating/store', [RatingController::class, 'store'])->name('rating.store');
+Route::post('/Rating/update/{id}', [RatingController::class, 'update'])->name('rating.update');
+Route::delete('/Rating/delete/{id}', [RatingController::class, 'delete'])->name('rating.delete');
+
+Route::get('/Reservasi', [ReservasiController::class, 'index'])->name('reservasi.index');
+Route::get('/Reservasi/create', [ReservasiController::class, 'create'])->name('reservasi.create');
+Route::get('/Reservasi/edit/{id}', [ReservasiController::class, 'edit'])->name('reservasi.edit');
+Route::post('/Reservasi/store', [ReservasiController::class, 'store'])->name('reservasi.store');
+Route::post('/Reservasi/update/{id}', [ReservasiController::class, 'update'])->name('reservasi.update');
+Route::delete('/Reservasi/delete/{id}', [ReservasiController::class, 'delete'])->name('reservasi.delete');
 
 Route::get('/home', function () {
     return view('home');

@@ -19,7 +19,7 @@ class CabangController extends Controller
      */
     public function create()
     {
-        return view('admin.create');
+        return view('cabang.create');
     }
 
     /**
@@ -29,12 +29,12 @@ class CabangController extends Controller
     {
         $data = $request->all();
         Cabang::create([
-            'nama_menu' => $data['nama'],
-            'deskripsi_menu' => $data['deskripsi'],
-            'tipe_menu' => $data['tipe'],
+            'cabang' => $data['cabang'],
+            'alamat' => $data['alamat'],
+            'kontak' => $data['kontak'],
         ]);
 
-        return redirect(route('admin.index'));
+        return redirect(route('cabang.index'));
     }
 
     public function edit($id)
@@ -44,8 +44,8 @@ class CabangController extends Controller
         //     'title' => 'Edit Menu',
         // ]);
 
-        $admin = Cabang::findOrFail($id);
-        return view('Admin.edit', compact('admin'));
+        $cabang = Cabang::findOrFail($id);
+        return view('Cabang.edit', compact('cabang'));
     }
 
     public function update(Request $request, $id)
@@ -53,13 +53,13 @@ class CabangController extends Controller
         $admin = Cabang::findOrFail($id);
         $admin->update($request->all());
 
-        return redirect('Admin')->with('success', 'Berhasil mengubah menu dengan nama ' . $request['nama_menu']);
+        return redirect('Cabang')->with('success', 'Berhasil mengubah menu dengan nama ' . $request['cabang']);
     }
 
     public function delete($id)
     {
         $admin = Cabang::findOrFail($id);
         $admin -> delete();
-        return redirect('Admin')->with('success', 'Berhasil menghapus menu dengan nama ' . $admin->nama_menu);
+        return redirect('Cabang')->with('success', 'Berhasil menghapus menu dengan nama ' . $admin->cabang);
     }
 }

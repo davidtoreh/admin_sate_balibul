@@ -6,30 +6,30 @@
 
 @section('content')
 
-<a href="/Admin/create" type="button" class="btn btn-primary mt-4 mb-2 ms-4">Tambah</a>
+<a href="/Reservasi/create" type="button" class="btn btn-primary mt-4 mb-2 ms-4">Tambah</a>
 <div class="card card-default px-4">
+    @if (count($reservasi) > 0)
     <div class="card-body mt-4 p-0 table-responsive">
-        @if (count($admin) > 0)
         <table class="table table-bordered table-striped table-hover mb-0">
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama Menu</th>
-                    <th>Deskripsi Menu</th>
-                    <th>Tipe Menu</th>
+                    <th>Nama Pemesan</th>
+                    <th>Tanggal Pemesanan</th>
+                    <th>Jumlah Orang</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <?php $no = 1 ?>
-            @foreach($admin as $menu)
+            @foreach($reservasi as $reservasis)
             <tr>
                 <td>{{ $no++ }}</td>
-                <td style="width : 250px">{{ $menu->nama_menu }}</td>
-                <td >{{ $menu->deskripsi_menu }}</td>
-                <td >{{ $menu->tipe_menu }}</td>
+                <td>{{ $reservasis->nama_pemesan }}</td>
+                <td>{{ $reservasis->tanggal_reservasi }}</td>
+                <td>{{ $reservasis->jumlah_orang }}</td>
                 <td class="d-flex flex-col gap-3 justify-items-center">
-                    <a class="btn btn-warning" href="{{ route('admin.edit', $menu->id) }}">Ubah</a>
-                    <form method="post" action="{{ route('admin.delete', $menu->id) }}" style="display: inline-block;">
+                    <a class="btn btn-warning" href="{{ route('reservasi.edit', $reservasis->id) }}">Ubah</a>
+                    <form method="post" action="{{ route('reservasi.delete', $reservasis->id) }}" style="display: inline-block;">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger" onclick="return confirm('Hapus Data?')">Hapus</button>
@@ -39,8 +39,8 @@
             @endforeach
         </table>
     </div>
+    @else
+        <p>Tidak ada Data Reservasi</p>
+    @endif
 </div>
-@else
-<p>Tidak ada makanan dan minum di menu ini.</p>
-@endif
 @endsection
