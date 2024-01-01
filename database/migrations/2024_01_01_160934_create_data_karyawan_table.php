@@ -8,25 +8,28 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    
-    
     public function up()
     {
-        Schema::create('list_menu', function (Blueprint $table) {
+        Schema::create('data_karyawan', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_menu');
-            $table->string('deskripsi_menu');
-            $table->string('tipe_menu');
+            $table->string('nama');
+            $table->string('umur');
+            $table->string('email')->unique();
+            $table->string('alamat');
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('list_menu');
+        Schema::dropIfExists('data_karyawan');
     }
 };

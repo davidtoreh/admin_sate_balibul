@@ -9,9 +9,9 @@ class Admin extends Model
 {
     use HasFactory;
 
-    protected $table = 'list_menu';
+    protected $table = 'rating_customers';
 
     protected $fillable = [
-        'id', 'nama_menu', 'deskripsi_menu', 'tipe_menu', 'created_at', 'updated_at'
+        'id', 'nama', 'rating', 'tipe_menu', 'komentar', 'created_at','updated_at'
     ];
 }

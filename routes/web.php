@@ -4,6 +4,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CabangController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,13 @@ Route::get('/Admin/edit/{id}', [AdminController::class, 'edit'])->name('admin.ed
 Route::post('/Admin/store', [AdminController::class, 'store'])->name('admin.store');
 Route::post('/Admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
 Route::delete('/Admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
+
+Route::get('/Cabang', [CabangController::class, 'index'])->name('cabang.index');
+Route::get('/Cabang/create', [CabangController::class, 'create'])->name('cabang.create');
+Route::get('/Cabang/edit/{id}', [CabangController::class, 'edit'])->name('cabang.edit');
+Route::post('/Cabang/store', [CabangController::class, 'store'])->name('cabang.store');
+Route::post('/Cabang/update/{id}', [CabangController::class, 'update'])->name('cabang.update');
+Route::delete('/Cabang/delete/{id}', [CabangController::class, 'delete'])->name('cabang.delete');
 
 Route::get('/home', function () {
     return view('home');
