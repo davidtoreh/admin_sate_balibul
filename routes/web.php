@@ -32,12 +32,12 @@ Route::post('/Admin/store', [AdminController::class, 'store'])->name('admin.stor
 Route::post('/Admin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
 Route::delete('/Admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
 
-Route::get('/landingPage', function () {
-    return view('landingPage');
+Route::get('/home', function () {
+    return view('home');
 });
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/', function () {
-    return view('home', ['title' => 'Home']);
-})->name('home');
+    return view('landingPage', ['title' => 'Landing Page | Sate Balibul']);
+})->name('landingPage');

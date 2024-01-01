@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="{{ asset('frontend') }}/css/style-min.css">
     <link rel="stylesheet" href="{{ asset('frontend') }}/css/style.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

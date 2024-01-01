@@ -20,9 +20,3 @@
     <!-- Jumbotron End -->
     @endsection
 @endauth
-@section('content')
-@guest
-<a class="btn btn-primary" href="{{ route('login') }}" id="login">Login</a>
-<a class="btn btn-info" href="{{ route('register') }}" id="register">Register</a>
-@endguest
-@endsection

@@ -1,6 +1,6 @@
-    <!--====== HEADER PART START ======-->
+<!--====== HEADER PART START ======-->
 
-    <section class="header_area">
+<section class="header_area">
         <div class="header_navbar">
             <div class="container">
                 <div class="row">
@@ -10,7 +10,9 @@
                                 <div class="cuisine">Sate Balibul</div>
                                 <img class="logo-sate" src="images/logo sate balibul.png" />
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -37,6 +39,17 @@
                                         <a class="page-scroll" href="#franchise">Franchise</a>
                                     </li>
                                 </ul>
+                                <div>
+                                    <a href="/login">
+                                        <div class="d-flex align-items-center">
+                                            <span
+                                                class="page-scroll material-symbols-outlined bg-white p-1 mr-2 rounded-circle ml-4"
+                                                style="height:100%">
+                                                login
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div> <!-- navbar collapse -->
                         </nav> <!-- navbar -->
                     </div>
@@ -44,13 +57,17 @@
             </div> <!-- container -->
         </div> <!-- header navbar -->
         <div id="home" class="header_slider slider-active">
-            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(images/wallpaper-2.png)">
+            <div class="single_slider bg_cover d-flex align-items-center"
+                style="background-image: url(images/wallpaper-2.png)">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9">
                             <div class="slider_content">
                                 <h2 class="slider_title">Sate Balibul Bang Ali</h2>
-                                <p class="wow fadeInUp">Selamat datang di Rumah Makan Sate Kambing Balibul! Kami adalah destinasi kuliner unik yang menghadirkan kelezatan sate kambing dengan cita rasa autentik. Kami bangga menjadi tempat berkumpul bagi pecinta masakan khas Indonesia yang ingin menikmati cita rasa kambing yang lezat dan istimewa</p>
+                                <p class="wow fadeInUp">Selamat datang di Rumah Makan Sate Kambing Balibul! Kami adalah
+                                    destinasi kuliner unik yang menghadirkan kelezatan sate kambing dengan cita rasa
+                                    autentik. Kami bangga menjadi tempat berkumpul bagi pecinta masakan khas Indonesia
+                                    yang ingin menikmati cita rasa kambing yang lezat dan istimewa</p>
                                 <!-- <a href="https://rebrand.ly/cafe-ud" rel="nofollow" class="main-btn">More About Us</a> -->
                             </div> <!-- slider content -->
                         </div>
