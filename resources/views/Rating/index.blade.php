@@ -40,7 +40,7 @@
         </table>
     </div>
     @else
-        <p>Tidak ada Data Rating Karyawan</p>
+        <p>Tidak ada Data Rating Customer</p>
     @endif
 </div>
 @endsection

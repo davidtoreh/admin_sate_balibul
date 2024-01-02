@@ -56,10 +56,8 @@
                             Mereka membawa pengetahuan mereka dalam meracik dan memanggang sate kambing yang sempurna,
                             dengan resep warisan keluarga yang telah turun-temurun.</p>
                         <ul class="social">
-                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni lni-whatsapp"></i></a></li>
-                            <li><a href="https://www.instagram.com/satebalibulbangali/"><i
-                                        class="lni lni-instagram-original"></i></a></li>
+                            <li><a href="https://wa.me/082224000250"><i class="lni lni-whatsapp"></i></a></li>
+                            <li><a href="https://www.instagram.com/satebalibulbangali/"><i class="lni lni-instagram-original"></i></a></li>
                         </ul>
                     </div> <!-- row -->
                 </div>

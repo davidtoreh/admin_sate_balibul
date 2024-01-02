@@ -9,7 +9,6 @@
                             <h4 class="footer_title">About Us</h4>
                             <p>Rumah Makan Sate Balibul didirikan dengan cinta dan dedikasi untuk memperkenalkan kelezatan sate kambing Indonesia ke seluruh penjuru</p>
                             <ul class="social">
-                                <li><a href="#"><i class="lni lni-envelope"></i><p>satebalibul@gmail.com</p></a></li>
                                 <li><a href="https://wa.me/082224000250"><i class="lni lni-whatsapp"></i></a></li>
                                 <li><a href="https://www.instagram.com/satebalibulbangali/"><i class="lni lni-instagram-original"></i></a></li>
                             </ul>
