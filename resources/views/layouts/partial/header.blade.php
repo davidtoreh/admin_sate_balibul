@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html" alt="Logo">
+                            <a class="navbar-brand" href="/" alt="Logo">
                                 <div class="cuisine">Sate Balibul</div>
                                 <img class="logo-sate" src="logobalibul.png" />
                             </a>
