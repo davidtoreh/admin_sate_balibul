@@ -21,6 +21,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('landingPage', ['title' => 'Landing Page | Sate Balibul']);
+})->name('landingPage');
+
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::get('register', [UserController::class, 'register'])->name('register');
 Route::post('register', [UserController::class, 'register_action'])->name('register.action');
 Route::get('login', [UserController::class, 'login'])->name('login');
@@ -63,13 +73,3 @@ Route::get('/Reservasi/edit/{id}', [ReservasiController::class, 'edit'])->name('
 Route::post('/Reservasi/store', [ReservasiController::class, 'store'])->name('reservasi.store');
 Route::post('/Reservasi/update/{id}', [ReservasiController::class, 'update'])->name('reservasi.update');
 Route::delete('/Reservasi/delete/{id}', [ReservasiController::class, 'delete'])->name('reservasi.delete');
-
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
-
-Route::get('/', function () {
-    return view('landingPage', ['title' => 'Landing Page | Sate Balibul']);
-})->name('landingPage');

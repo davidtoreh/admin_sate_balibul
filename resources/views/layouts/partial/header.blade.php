@@ -8,7 +8,7 @@
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html" alt="Logo">
                                 <div class="cuisine">Sate Balibul</div>
-                                <img class="logo-sate" src="images/logo sate balibul.png" />
+                                <img class="logo-sate" src="logobalibul.png" />
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

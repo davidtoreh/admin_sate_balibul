@@ -2,31 +2,6 @@
 @section('title', 'Sate Balibul')
 @section('content')
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("tUE_v0SiBx11r1AHy");
-        })();
-    </script>
-
-    <script>
-        const sendMail = () => {
-            var params = {
-                from_name: document.getElementById('fullname').value,
-                email_id: document.getElementById('email_id').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value,
-            }
-            emailjs.send("service_iebmevd", "template_do7vftm", params).then((res) => {
-                alert("success !" + res.status)
-            })
-        }
-
-        const hahaMail = () => {
-            console.log('woyyyy')
-        }
-    </script>
-
     <!--====== ABOUT PART START ======-->
 
     <section id="about" class="about_area pt-120 pb-130">
@@ -70,8 +45,7 @@
 
     <!--====== COUNTER PART START ======-->
 
-    <section id="counter" class="counter_area pt-50 pb-95 text-center"
-        style="background-image: url(images/sate wallpaper.jpg)">
+    <section id="counter" class="counter_area pt-50 pb-95 text-center" style="background-image: url(images/sate\ wallpaper.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
