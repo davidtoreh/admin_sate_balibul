@@ -331,14 +331,14 @@
     <!--====== CONTACT PART ENDS ======-->
 
 
-    <!--====== FRANCHISE PART START======-->
+    <!--====== OUTLET PART START======-->
 
-    <section id="franchise" class="franshise_area">
+    <section id="outlet" class="outlet_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center pb-50">
-                        <h4 class="title">FRANCHISE</h4>
+                        <h4 class="title">Our Outlet</h4>
                         <span class="line">
                             <span class="box"></span>
                         </span>
@@ -347,111 +347,110 @@
             </div> <!-- row -->
             <div class="row justify-content-center pb-90">
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Pusat</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. A. Yani No. 219 Pabelan Kartasura</p>
                             <a href="https://wa.me/081326598126">Telp. 081326598126</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Yogya</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. Godean KM. 45 Area SPU Banyuraden, Yogyakarta</p>
                             <a href="https://wa.me/081250331779">Telp. 081250331779</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Magelang</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. Magelang - Secang, Magelang (Depan kantor kec. Secang)</p>
                             <a href="https://wa.me/081226003817">Telp. 081226003817</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Salatiga</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. Solo-Semarang, Lopait, Tuntang, Kab. Semarang, Salatiga</p>
                             <a href="https://wa.me/081327218500">Telp. 081327218500</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
-                            <h4 class="text-wrapper">Sate Balibul Karanganyar</h4>
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
+                            <h4 class="text-wrapper">Sate Balibul Prambanan</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
-                            <p>Jl. Lawu No. 136, Bejen Karanganyar</p>
+                        <div class="outlet_content">
+                            <p>Jl. Raya Jogjakarta - Solo No.KM.17, Kb. Dalem Kidul, Kec. Prambanan, Kab. Klaten, Jawa Tengah</p>
                             <a href="https://wa.me/082324404571">Telp. 082324404571</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Sukoharjo</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. Slamet Riyadi Begajah Sukoharjo</p>
                             <a href="https://wa.me/08818097065">Telp. 08818097065</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Wates</h4>
                             </li>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. Wates KM.7, Balecatur Sleman, Yogyakarta</p>
                             <a href="https://wa.me/082140659809">Telp. 082140659809</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
                             <h4 class="text-wrapper">Sate Balibul Kalasan</h4>
                         </div>
-                        <div class="franchise_content">
+                        <div class="outlet_content">
                             <p>Jl. Solo Jogja KM. 11, Kalasan, Yogyakarta</p>
                             <a href="https://wa.me/081311435400">Telp. 081311435400</a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single_franchise mt-30 wow fadeInLeftBig">
-                        <div class="franchise_location">
-                            <h4 class="text-wrapper">Sate Balibul Resta Pendopo</h4>
-                            </li>
+                    <div class="single_outlet mt-30 wow fadeInLeftBig">
+                        <div class="outlet_location">
+                            <h4 class="text-wrapper"></h4>
                         </div>
-                        <div class="franchise_content">
-                            <p>Rest Area Pendopo KM 456, Tol Semarang - Solo Side A UG-010 Salatiga</p>
-                            <a href="https://wa.me/082121440470">Telp. 082121440470</a>
+                        <div class="outlet_content">
+                            <p></p>
+                            <a></a>
                         </div>
-                    </div> <!-- single franchise -->
+                    </div> <!-- single outlet -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
@@ -465,7 +464,7 @@
         </div> <!-- contact map -->
     </section>
 
-    <!--====== FRANCHISE PART ENDS ======-->
+    <!--====== OUTLET PART ENDS ======-->
 
     <!--====== BACK TOP TOP PART START ======-->
 
